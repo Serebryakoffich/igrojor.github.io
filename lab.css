@@ -945,13 +945,12 @@ section ul
   }
   
   .header-right {
-    /* Не допускаем переноса, задаём фиксированный размер контейнера */
     display: flex;
     align-items: center;
   }
   
   .login-btn {
-      background-image: url('../Image/avatar.png');
+      background-image: url('Image/avatar.png');
       margin-left: 10px;
       border: 2px solid #f0f0f0;
     width: 70px;
@@ -964,7 +963,7 @@ section ul
   }
   .login-btn:hover {
     transition: background 0.3s;
-    background-image: url('../Image/hoveravatar.png');
+    background-image: url('Image/hoveravatar.png');
     margin-left: 10px;
     border: 2px solid #f0f0f0;
   width: 70px;
