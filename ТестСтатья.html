@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ИгроЖор</title>
+  <link rel="stylesheet" href="lab.css">
+  <script src="auth.js" defer></script>
+  <script src="article.js" defer></script>
+  <link rel="icon" href="Image/favicon.png">
+</head>
+<body>
+    <div class="page-bg">
+    <div class="page">
+        <header class="header">
+            <div class="header-left">
+              <div class="figure">
+                <a href="index.html">
+                  <img src="Image/logo.png" alt="Логотип">
+                </a>
+                <h1><a href="index.html">Игровой журнал «ИгроЖор»</a></h1>
+              </div>
+            </div>
+            <nav class="header-center">
+              <section>
+              <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Статьи.html">Статьи</a>
+                  <ul>
+                    <li><a href="#">Ожидаемые игры 2025 года</a></li>
+                    <li><a href="#">Подборка кооперативных игр</a></li>
+                    <li><a href="#">Лучшие игры на телефон без интернета</a></li>
+                    <li><a href="ТестСтатья.html">Лучшие игры 2024 года</a></li>
+                  </ul>
+                </li>
+                <li><a href="Игры.html">База игр</a>
+                  <ul>
+                    <li><a href="#">Шутеры от первого лица</a></li>
+                    <li><a href="#">Песочницы</a></li>
+                    <li><a href="#">RPG</a></li>
+                    <li><a href="#">Слэшеры</a></li>
+                  </ul>
+                </li>
+                <li><a href="Новости.html">Новости недели</a></li>
+                <li><a href="Контакты.html">Контакты</a></li>
+              </ul>
+              </section>
+            </nav>
+            <div class="header-right">
+              <button id="loginBtn" class="login-btn"></button>
+            </div>
+          </header>
+      <main>
+        <div class="article-container">
+          <div class="article-header">
+            <img src="Image/helldivers2.jpg" alt="Helldivers 2">
+            <h1>Лучшие игры 2024 года</h1>
+          </div>
+          <div class="article-content">
+            <p>2024 год обещает быть насыщенным на потрясающие игровые релизы. В нашем списке представлены самые ожидаемые проекты, которые непременно стоит попробовать. Одной из главных звезд нового года станет <strong>Helldivers 2</strong> — продолжение кооперативного шутера, завоевавшего популярность благодаря динамичному геймплею и чёрному юмору.</p>
+            <p>Также в 2024 году мы увидим долгожданные продолжения популярных серий, а некоторые инди-проекты уже сейчас привлекают внимание игрового сообщества. Обо всём этом читайте далее!</p>
+          </div>
+
+          <div id="adminControls" class="admin-controls" style="display:none;">
+            <button onclick="editArticle()">Редактировать</button>
+            <button onclick="publishArticle()">Опубликовать</button>
+          </div>
+  
+          <div class="comments-section">
+            <h2>Комментарии</h2>
+            <div id="commentsList">
+              <div class="comment">
+                <div class="comment-avatar">
+                  <img src="Image/avatar.png" alt="Аватар">
+                </div>
+                <div class="comment-text">
+                  <strong>Гость47</strong>: Ух ты, Helldivers 2! Помню как с пацанами гонял в ней часами!
+                </div>
+              </div>
+            </div>
+  
+            <div class="comment-form">
+              <div style="display: flex; align-items: center; gap: 10px;">
+              </div>
+              <textarea id="commentText" placeholder="Ваш комментарий"></textarea>
+              <button id="submitCommentBtn">Отправить</button>
+              <div id="notLoggedMessage" class="not-logged" style="display:none;">
+                <a href="Логин.html">Войдите</a> или <a href="Регистрация.html">зарегистрируйтесь</a> для того, чтобы оставить комментарий
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+  
+
+    </div>
+    
+</div>
+      <footer class="footer">
+        <p>©2024 «ИгроЖор», Серебряков Юрий Игоревич</p>
+      </footer>
+  </body>
+  </html>

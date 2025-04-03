@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    ИгроЖор
+    </title>
+    <link rel="icon" href="/Image/favicon.png">
+  <link rel="stylesheet" href="lab.css">
+  <script src="auth.js" defer></script>
+  <link rel="icon" href="Image/favicon.png">
+</head>
+<body>
+  <div class="page-bgs">
+
+    <div class="page">
+        <header class="header">
+            <div class="header-left">
+              <div class="figure">
+                <a href="index.html">
+                  <img src="Image/logo.png" alt="Логотип">
+                </a>
+                <h1><a href="index.html">Игровой журнал «ИгроЖор»</a></h1>
+              </div>
+            </div>
+            <nav class="header-center">
+              <section>
+              <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Статьи.html">Статьи</a>
+                  <ul>
+                    <li><a href="#">Ожидаемые игры 2025 года</a></li>
+                    <li><a href="#">Подборка кооперативных игр</a></li>
+                    <li><a href="#">Лучшие игры на телефон без интернета</a></li>
+                    <li><a href="ТестСтатья.html">Лучшие игры 2024 года</a></li>
+                  </ul>
+                </li>
+                <li><a href=" Игры.html">База игр</a>
+                  <ul>
+                    <li><a href="#">Шутеры от первого лица</a></li>
+                    <li><a href="#">Песочницы</a></li>
+                    <li><a href="#">RPG</a></li>
+                    <li><a href="#">Слэшеры</a></li>
+                  </ul>
+                </li>
+                <li><a href=" Новости.html">Новости недели</a></li>
+                <li><a href=" Контакты.html">Контакты</a></li>
+              </ul>
+              </section>
+            </nav>
+            <div class="header-right">
+              <button id="loginBtn" class="login-btn"></button>
+            </div>
+          </header>
+        <div class="account-container">
+            <h1>Регистрация</h1>
+            <div class="account-fields">
+              <label for="accLogin">Логин</label>
+              <input type="text" id="accLogin" placeholder="Guest47">
+        
+              <label for="accPassword">Эл. Почта</label>
+              <input type="text" id="accEmail" placeholder="email@example.com">
+        
+              <label for="accEmail">Пароль</label>
+              <div class="password-wrapper">
+              <input type="password" id="accPassword" placeholder="**********">
+              <button type="button" id="togglePassword">
+                👁️
+            </button>
+            </div>
+          </div>
+            <button class="account-save-btn" onclick="saveAccount()">Зарегистироваться</button>
+    </div>
+  </div>
+</div>
+  <footer class="footer">
+    <p>©2024 «ИгроЖор», Серебряков Юрий Игоревич</p>
+  </footer>
+</body>
+</html>
